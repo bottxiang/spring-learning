@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+        <bean name="user" class="top.woohsi.User"/>
+
+        <bean id="localDate" class="java.time.LocalDate" factory-method="now"/>
+
+        <bean id="executorService" class="java.util.concurrent.Executors"
+              factory-method="newCachedThreadPool"
+              destroy-method="shutdown"/>
+        <bean id="address" class="top.woohsi.Address"/>
+<!--        <bean id="user2" class="top.woohsi.User">-->
+<!--                <constructor-arg name="name" value="Joe"/>-->
+<!--                <constructor-arg name="age" value="9"/>-->
+<!--                <constructor-arg name="address" ref="address"/>-->
+<!--        </bean>-->
+
+
+
+</beans>
