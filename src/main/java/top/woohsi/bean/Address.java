@@ -1,8 +1,8 @@
-package top.woohsi;
+package top.woohsi.bean;
 
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class Address {
 
     private String city="Shanghai";
@@ -13,6 +13,6 @@ public class Address {
 
     @Override
     public String toString() {
-        return "top.woohsi.Address: " + avenue + ", " + city + '.';
+        return "top.woohsi.bean.Address: " + avenue + ", " + city + '.';
     }
 }

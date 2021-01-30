@@ -1,4 +1,4 @@
-package top.woohsi;
+package top.woohsi.bean;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -11,7 +11,7 @@ public class User {
     private String age = "20";
     private Address address;
 
-    @Autowired
+    @Autowired(required=false)
     public User(Address address) {
         this.address = address;
     }
